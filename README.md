@@ -46,7 +46,8 @@ As an administrator, you should exercise extra care and confidence in your actio
  
 This ReadMe file provides a general description of the site's environment and structure. More detailed information about functionality and implementation can be found in the relevant code files and project documentation.
 
-#UA
+# UA
+
 Цей ReadMe файл містить опис структури та функціональності сайту. Сайт включає чотири основні сторінки: "Головна", "Квест", "Інформація про користувача" та "Аналітика". Кожна сторінка має свою унікальну функціональність та відповідає певним вимогам. Нижче наведено опис кожної сторінки:
  
 ## 1) Сторінка "Головна"
