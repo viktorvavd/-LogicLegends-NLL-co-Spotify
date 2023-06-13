@@ -1,0 +1,61 @@
+body {
+    background-color: black;
+    font-family: "Nunito", sans-serif;
+}
+h1 {
+    position: absolute;
+    width: 506px;
+    height: 268px;
+    left: calc(50% - 506px/2 - 344px);
+    top: 272px;
+
+
+    font-style: normal;
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 82px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1em;
+    text-transform: capitalize;
+
+    color: #00C24A;
+}
+
+h2 {
+    position: absolute;
+    width: 577px;
+    height: 192px;
+    left: calc(50% - 577px/2 + 347.5px);
+    top: 929px;
+
+    font-style: normal;
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 82px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1em;
+    text-transform: capitalize;
+
+    color: #00C24A;
+}
+
+h3 {
+    position: absolute;
+    width: 577px;
+    height: 192px;
+    left: calc(50% - 577px/2 - 297.5px);
+    top: 1475px;
+
+    font-style: normal;
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 82px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1em;
+    text-transform: capitalize;
+
+    color: #00C24A;
+}
