@@ -1,19 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="mystyle.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>SpotifyProject</title>
     <style>
         body{
             font-family: "Nunito", sans-serif;
             background: black;
         }
-        h1{
+        header {
+            background-color: black;
+            color: #fff;
+            padding: 10px;
+        }
+
+        /* Menu styles */
+        ul.menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        ul.menu li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        ul.menu li a {
+            /*color: #fff;*/
+            /*text-decoration: none;*/
+            padding: 20px;
+            font-family: 'Nunito', sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 41px;
+            letter-spacing: 0.1em;
+
             color: #FFFFFF;
         }
+        .rectangle1{
+            position: absolute;
+            width: 645px;
+            height: 66px;
+            left: 700px;
+            top: 243px;
+
+            background: rgba(2, 167, 65, 0.65);
+            border-radius: 16px;
+        }
+        .rectangle2{
+            position: absolute;
+            width: 645px;
+            height: 66px;
+            left: 700px;
+            top: 368px;
+
+            background: rgba(2, 167, 65, 0.65);
+            border-radius: 16px;
+        }
+        .account{
+            position: absolute;
+            width: 645px;
+            height: 66px;
+            left: 700px;
+            top: 243px;
+            background: rgba(2, 167, 65, 0.65);
+            border-radius: 16px;
+
+            font-family: "Nunito", sans-serif;
+            font-size: 50px;
+        }
+        .password{
+            position: absolute;
+            width: 645px;
+            height: 66px;
+            left: 700px;
+            top: 368px;
+            background: rgba(2, 167, 65, 0.65);
+            border-radius: 16px;
+
+            font-family: "Nunito", sans-serif;
+            font-size: 50px;
+        }
+
     </style>
 </head>
 <body>
-<h1>register</h1>
+<header>
+    <nav>
+        <ul class="menu">
+            <li><a href="#" onclick="navigateTo('')">main</a></li>
+            <li><a href="#" >about</a></li>
+            <li><a href="#" onclick="navigateTo('register')">register</a></li>
+        </ul>
+    </nav>
+</header>
+<div>
+    <registerText>register</registerText>
+    <spotifyPlace>spotify account:</spotifyPlace>
+    <passwordText>Password: </passwordText>
+    <rect class = "rectangle1"></rect>
+    <rect class = "rectangle2"></rect>
+    <input type="text" placeholder="Enter your account" class="account">
+    <input type="text" placeholder="Enter your password" class="password">
+</div>
 </body>
 </html>
