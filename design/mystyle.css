@@ -59,3 +59,63 @@ h3 {
 
     color: #00C24A;
 }
+
+registerText{
+    position: absolute;
+    width: 346px;
+    height: 73px;
+    left: calc(50% - 346px/2 - 433px);
+    top: 111px;
+
+    font-style: normal;
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 82px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1em;
+    text-transform: capitalize;
+
+    color: #00C24A;
+}
+
+spotifyPlace{
+    position: absolute;
+    width: 346px;
+    height: 73px;
+    left: calc(50% - 346px/2 - 433px);
+    top: 256px;
+
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 41px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1em;
+    text-transform: capitalize;
+
+    color: #FFFFFF;
+}
+
+passwordText{
+    position: absolute;
+    width: 346px;
+    height: 73px;
+    left: calc(50% - 346px/2 - 433px);
+    top: 381px;
+
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 41px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1em;
+    text-transform: capitalize;
+
+    color: #FFFFFF;
+
+}

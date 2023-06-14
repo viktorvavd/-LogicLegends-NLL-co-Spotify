@@ -11,8 +11,12 @@ app.use(express.static(path.join(__dirname, 'design')));
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'design', 'index.html'));
 });
-app.get('/register', (req, res) => {
+app.get('/account', (req, res) => {
     res.sendFile(path.join(__dirname, 'design', 'register.html'));
+});
+
+app.get('/account/quest', (req, res) => {
+    res.sendFile(path.join(__dirname, 'design', 'quest.html'));
 });
 
 // Start the server
