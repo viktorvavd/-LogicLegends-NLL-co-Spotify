@@ -83,18 +83,38 @@
             border-radius: 16px;
 
             font-family: "Nunito", sans-serif;
+            color: white;
             font-size: 50px;
+        }
+        .showPass{
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            left: 700px;
+            top: 500px;
+
+            border-radius: 16px;
+            color: #FFFFFF;
+        }
+        .showPassText{
+            position: absolute;
+            width: 100px;
+            height: 60px;
+            left: 800px;
+            top: 500px;
+
+            color: #FFFFFF;
         }
 
     </style>
 </head>
 <body>
+
 <header>
     <nav>
         <ul class="menu">
-            <li><a href="#" onclick="navigateTo('')">main</a></li>
-            <li><a href="#" >about</a></li>
-            <li><a href="#" onclick="navigateTo('register')">register</a></li>
+            <li><a href="/">main</a></li>
+            <li><a href="/account">account</a></li>
         </ul>
     </nav>
 </header>
@@ -102,10 +122,24 @@
     <registerText>register</registerText>
     <spotifyPlace>spotify account:</spotifyPlace>
     <passwordText>Password: </passwordText>
-    <rect class = "rectangle1"></rect>
-    <rect class = "rectangle2"></rect>
+<!--    <rect class = "rectangle1"></rect>-->
+<!--    <rect class = "rectangle2"></rect>-->
+    <form>
     <input type="text" placeholder="Enter your account" class="account">
-    <input type="text" placeholder="Enter your password" class="password">
+    <input type="password" placeholder="Enter your password" class="password" id = "myInput">
+        <input type="checkbox" onclick="myFunction()" class = "showPass">
+        <text class = "showPassText">show password</text>
+    </form>
 </div>
+<script>
+    function myFunction() {
+        var x = document.getElementById("myInput");
+        if (x.type === "password") {
+            x.type = "text";
+        } else {
+            x.type = "password";
+        }
+    }
+</script>
 </body>
 </html>
