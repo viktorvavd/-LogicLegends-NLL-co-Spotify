@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
+
     <title>Spotify Project</title>
 
   <style>
@@ -28,8 +30,6 @@
     }
 
     ul.menu li a {
-      /*color: #fff;*/
-      /*text-decoration: none;*/
       padding: 20px;
       font-family: 'Nunito', sans-serif;
       font-style: normal;
@@ -40,16 +40,60 @@
 
       color: #FFFFFF;
     }
+
+    .testName{
+        position: absolute;
+        width: 540px;
+        height: 82px;
+        left: 151px;
+        top: 136px;
+
+        font-family: 'Nunito', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 82px;
+        /* identical to box height */
+
+        letter-spacing: 0.1em;
+
+        color: #00C24A;
+    }
+    .testQuestion{
+        position: absolute;
+        width: 1200px;
+        height: 85px;
+        left: 150px;
+        top: 244px;
+
+        font-family: 'Nunito', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 82px;
+        letter-spacing: 0.1em;
+
+        color: #FFFFFF;
+    }
   </style>
+    <script>
+        function changeText() {
+            var element = document.getElementById('answer');
+            element.innerHTML = 'New Text';
+        }
+    </script>
 </head>
 <body>
 <header>
   <nav>
     <ul class="menu">
       <li><a href="/">main</a></li>
-      <li><a href="/account">account</a></li>
+      <li><a href="/register">register</a></li>
     </ul>
   </nav>
 </header>
+
+<text class = "testName" id="nameOfTest">Test name</text>
+<text class="testQuestion" id="testQuestion">question of test</text>
 </body>
 </html>
