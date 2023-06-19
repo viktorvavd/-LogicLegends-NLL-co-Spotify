@@ -1,4 +1,5 @@
 const express = require('express');
+const apiRouter = require('./repository/api.routes')
 const path = require('path');
 
 const app = express();
@@ -6,6 +7,9 @@ const port = 3000;
 
 // Serve static files from the "public" directory
 app.use(express.static(path.join(__dirname, 'design')));
+
+// Use api route for quest db
+app.use('/api', apiRouter)
 
 // Define a route to serve the HTML file
 app.get('/', (req, res) => {
