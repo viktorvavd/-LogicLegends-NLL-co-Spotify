@@ -105,6 +105,19 @@
 
             color: #FFFFFF;
         }
+        .submit{
+            position: absolute;
+            width: 80px;
+            height: 50px;
+            left: 1300px;
+            top: 500px;
+            background: rgba(2, 167, 65, 0.65);
+            border-radius: 16px;
+
+            font-family: "Nunito", sans-serif;
+            color: white;
+            font-size: 20px;
+        }
 
     </style>
 </head>
@@ -114,7 +127,7 @@
     <nav>
         <ul class="menu">
             <li><a href="/">main</a></li>
-            <li><a href="/account">account</a></li>
+            <li><a href="/register">register</a></li>
         </ul>
     </nav>
 </header>
@@ -122,18 +135,19 @@
     <registerText>register</registerText>
     <spotifyPlace>spotify account:</spotifyPlace>
     <passwordText>Password: </passwordText>
-<!--    <rect class = "rectangle1"></rect>-->
-<!--    <rect class = "rectangle2"></rect>-->
-    <form>
-    <input type="text" placeholder="Enter your account" class="account">
-    <input type="password" placeholder="Enter your password" class="password" id = "myInput">
+    <form id ="regForm">
+        <input type="text" placeholder="Enter your account" class="account">
+        <input type="password" placeholder="Enter your password" class="password" id = "passwordID">
         <input type="checkbox" onclick="myFunction()" class = "showPass">
         <text class = "showPassText">show password</text>
+        <button class = "submit" >Login </button>
     </form>
+
+
 </div>
 <script>
     function myFunction() {
-        var x = document.getElementById("myInput");
+        var x = document.getElementById("passwordID");
         if (x.type === "password") {
             x.type = "text";
         } else {
