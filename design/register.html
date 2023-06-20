@@ -3,146 +3,115 @@
 <head>
     <link rel="stylesheet" href="mystyle.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
     <meta charset="UTF-8">
     <title>SpotifyProject</title>
     <style>
         body{
             font-family: "Nunito", sans-serif;
             background: black;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
-        header {
-            background-color: black;
-            color: #fff;
-            padding: 10px;
-        }
-
-        /* Menu styles */
-        ul.menu {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        ul.menu li {
-            display: inline-block;
-            margin-right: 10px;
-        }
-
-        ul.menu li a {
-            /*color: #fff;*/
-            /*text-decoration: none;*/
-            padding: 20px;
+        .navbar-nav .nav-link{
             font-family: 'Nunito', sans-serif;
             font-style: normal;
-            font-weight: 700;
+            font-weight: 500;
             font-size: 30px;
             line-height: 41px;
             letter-spacing: 0.1em;
+            text-decoration: underline;
 
             color: #FFFFFF;
         }
-        .rectangle1{
-            position: absolute;
-            width: 645px;
-            height: 66px;
-            left: 700px;
-            top: 243px;
-
+        .btn{
+            position: relative;
+            width: 100%;
+            height: 100%;
             background: rgba(2, 167, 65, 0.65);
             border-radius: 16px;
-        }
-        .rectangle2{
-            position: absolute;
-            width: 645px;
-            height: 66px;
-            left: 700px;
-            top: 368px;
+            align-content: center;
+            justify-content: center;
+            display: flex;
+            outline: none;
 
-            background: rgba(2, 167, 65, 0.65);
-            border-radius: 16px;
-        }
-        .account{
-            position: absolute;
-            width: 645px;
-            height: 66px;
-            left: 700px;
-            top: 243px;
-            background: rgba(2, 167, 65, 0.65);
-            border-radius: 16px;
-
-            font-family: "Nunito", sans-serif;
-            font-size: 50px;
-        }
-        .password{
-            position: absolute;
-            width: 645px;
-            height: 66px;
-            left: 700px;
-            top: 368px;
-            background: rgba(2, 167, 65, 0.65);
-            border-radius: 16px;
-
-            font-family: "Nunito", sans-serif;
-            color: white;
-            font-size: 50px;
-        }
-        .showPass{
-            position: absolute;
-            width: 40px;
-            height: 40px;
-            left: 700px;
-            top: 500px;
-
-            border-radius: 16px;
-            color: #FFFFFF;
-        }
-        .showPassText{
-            position: absolute;
-            width: 100px;
-            height: 60px;
-            left: 800px;
-            top: 500px;
-
-            color: #FFFFFF;
-        }
-        .submit{
-            position: absolute;
-            width: 80px;
-            height: 50px;
-            left: 1300px;
-            top: 500px;
-            background: rgba(2, 167, 65, 0.65);
-            border-radius: 16px;
-
+            border: #00C24A;
+            text-align: center;
             font-family: "Nunito", sans-serif;
             color: white;
             font-size: 20px;
+        }
+        .btn:active{
+            background-color: #FFFFFF;
+            color: black;
+        }
+        .btn:hover{
+            background: aquamarine;
+            color: black;
+        }
+        .btn:focus {
+            background-color: #93c288;
+            color: black;
+            outline: none;
+        }
+
+
+        .textStyle{
+            position: relative;
+            width: 100%;
+            height: 533px;
+
+            font-family: "Nunito", sans-serif;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 60px;
+            line-height: 82px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            letter-spacing: 0.1em;
+            text-transform: capitalize;
+
+            color: #00C24A;
         }
 
     </style>
 </head>
 <body>
-
-<header>
-    <nav>
-        <ul class="menu">
-            <li><a href="/">main</a></li>
-            <li><a href="/register">register</a></li>
+<div class = "container">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="/">main</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/analytics" >analytics</a>
+            </li>
         </ul>
     </nav>
-</header>
-<div>
-    <registerText>register</registerText>
-    <spotifyPlace>spotify account:</spotifyPlace>
-    <passwordText>Password: </passwordText>
-    <form id ="regForm">
-        <input type="text" placeholder="Enter your account" class="account">
-        <input type="password" placeholder="Enter your password" class="password" id = "passwordID">
-        <input type="checkbox" onclick="myFunction()" class = "showPass">
-        <text class = "showPassText">show password</text>
-        <button class = "submit" >Login </button>
-    </form>
 
+    <div class="d-flex align-content-center">
+        <div class = "item">
+            <p class="textStyle">Log in with your Spotify account to see your personalized analysis</p>
+        </div>
+    </div>
+
+    <!--    <div class="d-flex align-content-center">-->
+    <!--        <div class = "item">-->
+    <!--            <button class="btn btn-primary submit">Login</button>-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <div class = "row justify-content-center">
+        <div class = "col-12 col-md-6 ">
+            <button class="btn ">
+                Login
+            </button>
+        </div>
+    </div>
 
 </div>
 <script>
@@ -155,5 +124,10 @@
         }
     }
 </script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossOrigin="anonymous"></script>
+
 </body>
 </html>

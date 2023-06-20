@@ -15,11 +15,11 @@ app.use('/api', apiRouter)
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'design', 'index.html'));
 });
-app.get('/register', (req, res) => {
+app.get('/analytics', (req, res) => {
     res.sendFile(path.join(__dirname, 'design', 'register.html'));
 });
 
-app.get('/register/quest', (req, res) => {
+app.get('/quest', (req, res) => {
     res.sendFile(path.join(__dirname, 'design', 'quest.html'));
 });
 
