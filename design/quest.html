@@ -2,98 +2,180 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
     <title>Spotify Project</title>
 
   <style>
-    header {
-      background-color: black;
-      color: #fff;
-      padding: 10px;
-    }
     body{
-      font-family: "Nunito", sans-serif;
-      background: black;
+        font-family: "Nunito", sans-serif;
+        background: black;
+        padding-top: 70px;
     }
 
-    /* Menu styles */
-    ul.menu {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-    }
-
-    ul.menu li {
-      display: inline-block;
-      margin-right: 10px;
-    }
-
-    ul.menu li a {
-      padding: 20px;
-      font-family: 'Nunito', sans-serif;
-      font-style: normal;
-      font-weight: 700;
-      font-size: 30px;
-      line-height: 41px;
-      letter-spacing: 0.1em;
-
-      color: #FFFFFF;
-    }
-
-    .testName{
-        position: absolute;
-        width: 540px;
-        height: 82px;
-        left: 151px;
-        top: 136px;
-
+    .navbar-nav .nav-link{
         font-family: 'Nunito', sans-serif;
         font-style: normal;
-        font-weight: 700;
-        font-size: 60px;
-        line-height: 82px;
-        /* identical to box height */
-
+        font-weight: 500;
+        font-size: large;
+        line-height: 41px;
         letter-spacing: 0.1em;
-
-        color: #00C24A;
-    }
-    .testQuestion{
-        position: absolute;
-        width: 1200px;
-        height: 85px;
-        left: 150px;
-        top: 244px;
-
-        font-family: 'Nunito', sans-serif;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 60px;
-        line-height: 82px;
-        letter-spacing: 0.1em;
+        text-decoration: underline;
 
         color: #FFFFFF;
     }
+
+    .testQuestion{
+        position: relative;
+        width: 100%;
+        height: 100%;
+
+        font-family: "Nunito", sans-serif;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 60px;
+        line-height: 82px;
+        display: flex;
+        align-items: normal;
+        letter-spacing: 0.1em;
+        text-transform: capitalize;
+        text-align: start;
+
+        color: #FFFFFF;
+    }
+    .textStyle{
+        position: relative;
+        width: 100%;
+        height: 100%;
+
+        font-family: "Nunito", sans-serif;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 60px;
+        line-height: 82px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.1em;
+        text-transform: capitalize;
+
+        color: #00C24A;
+    }
+
+    .btn{
+        position: relative;
+        background: rgba(2, 167, 65, 0.65);
+        border-radius: 16px;
+        align-content: center;
+        justify-content: center;
+        display: flex;
+        outline: none;
+
+        border: #00C24A;
+        text-align: start;
+        font-family: "Nunito", sans-serif;
+        color: white;
+        font-size: 20px;
+    }
+
+    .btn:active{
+        background-color: #FFFFFF;
+        color: black;
+    }
+    .btn:hover{
+        background: aquamarine;
+        color: black;
+    }
+    .btn:focus {
+        background-color: #93c288;
+        color: black;
+        outline: none;
+    }
+    .item{
+        padding: 20px;
+    }
+    .buttonItem{
+        padding: 5px;
+    }
+
+
+
+
   </style>
     <script>
         function changeText() {
-            var element = document.getElementById('answer');
-            element.innerHTML = 'New Text';
+            var element1 = document.getElementById('answer1');
+            var element2 = document.getElementById('answer2');
+            var element3 = document.getElementById('answer3');
+            var element4 = document.getElementById('answer4');
+            var element5 = document.getElementById('testQuestion');
+            element1.innerHTML = 'New Text';
+            element2.innerHTML = 'New Text';
+            element3.innerHTML = 'New Text';
+            element4.innerHTML = 'New Text';
+            element5.innerHTML = 'New Text';
         }
     </script>
 </head>
 <body>
-<header>
-  <nav>
-    <ul class="menu">
-      <li><a href="/">main</a></li>
-        <li><a href="/analytics">analytics</a></li>
-    </ul>
-  </nav>
-</header>
+<div class ="container">
+    <div class = "row">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="/">main</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/account" >account</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/quest" >quest</a>
+            </li>
+        </ul>
+    </nav>
+    </div>
 
-<text class = "testName" id="nameOfTest">Test name</text>
-<text class="testQuestion" id="testQuestion">question of test</text>
+    <div class="d-flex align-content-start">
+        <div class = "item">
+            <p class="textStyle">test of name</p>
+        </div>
+    </div>
+
+    <div class = "d-flex align-content-center">
+        <div class = "item">
+        <div class="col-12">
+            <text class="testQuestion" id="testQuestion">question of test</text>
+        </div>
+        </div>
+    </div>
+
+        <div class = "d-flex align-content-center">
+            <div class = "buttonItem">
+                <button class = "btn" id ="answer1" onclick = "changeText()">question oneLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</button>
+            </div>
+        </div>
+        <div class = "d-flex align-content-center">
+            <div class = "buttonItem">
+                <button class = "btn" id = "answer2" onclick = "changeText()">question two</button>
+            </div>
+        </div>
+    <div class = "d-flex align-content-center">
+        <div class = "buttonItem">
+            <button class = "btn" id = "answer3" onclick = "changeText()">question three</button>
+        </div>
+    </div>
+    <div class = "d-flex align-content-center">
+        <div class = "buttonItem">
+            <button class = "btn" id = "answer4" onclick = "changeText()">question four</button>
+        </div>
+    </div>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossOrigin="anonymous"></script>
 </body>
+
 </html>
